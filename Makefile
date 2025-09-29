@@ -22,7 +22,11 @@ LIBFT_DIR	=	./src/libft
 LIBFT_LIB	=	$(LIBFT_DIR)/libft.a
 
 # ================================ FILES ==================================== #
-C_FILES		=	main.c
+C_FILES		=	main.c \
+				./src/utils.c \
+				./src/args_validation.c \
+				./src/init_stack.c \
+				./src/free_memory.c
 			  
 OBJS		=	$(patsubst %.c,$(OBJS_DIR)/%.o,$(C_FILES))
 
