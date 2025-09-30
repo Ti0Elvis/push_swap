@@ -6,7 +6,7 @@ t_stack *append_node(t_stack *stack, long value)
     t_stack *new_node;
 
     if (value < INT_MIN || value > INT_MAX)
-        print_error("Value out of int range");
+        return (NULL);
     new_node = (t_stack *)malloc(sizeof(t_stack));
     if (!new_node)
         return (NULL);
