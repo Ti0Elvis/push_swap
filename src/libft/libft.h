@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: e06 <e06@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: evera <evera@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/28 12:09:20 by evera             #+#    #+#             */
-/*   Updated: 2025/09/29 20:22:25 by e06              ###   ########.fr       */
+/*   Updated: 2025/10/02 08:04:15 by evera            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ void				*ft_memchr(const void *str, int c, size_t n);
 int					ft_memcmp(const void *str1, const void *str2, size_t n);
 char				*ft_strnstr(const char *haystack, const char *needle,
 						size_t len);
-long					ft_atoi(const char *str);
+long				ft_atoi(const char *str);
 void				*ft_calloc(size_t n_elements, size_t size);
 char				*ft_strdup(const char *str);
 char				*ft_substr(const char *s, unsigned int start, size_t len);

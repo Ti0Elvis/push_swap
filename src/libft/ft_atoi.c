@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: e06 <e06@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: evera <evera@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 13:50:39 by evera             #+#    #+#             */
-/*   Updated: 2025/09/29 20:21:57 by e06              ###   ########.fr       */
+/*   Updated: 2025/10/02 08:07:30 by evera            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 long	ft_atoi(const char *str)
 {
-	size_t			i;
-	int				sign;
-	long int		number;
+	size_t		i;
+	int			sign;
+	long int	number;
 
 	i = 0;
 	sign = 1;
