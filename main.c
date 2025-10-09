@@ -8,7 +8,7 @@ void print_stack(t_stack *stack)
     t_stack *current = stack;
     while (current)
     {
-        printf("Value: %d\n", current->value);
+        ft_printf("Value: %d, Index: %d\n", current->value, current->index);
         current = current->next;
     }
 }
@@ -24,6 +24,8 @@ int main(int argc, char **argv)
     stack_a = init_stack(&argv[1]);
     if (!stack_a)
         print_error("Failed to initialize stack");
+    if (has_duplicates(stack_a))
+        return (free_stack(stack_a), print_error("Duplicates found"));
     print_stack(stack_a);
     free_stack(stack_a);
     return (0);

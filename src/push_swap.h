@@ -8,12 +8,18 @@
 typedef struct s_stack
 {
     int value;
+    int index;
     struct s_stack *next;
 }   t_stack;
 
 // args_validation.c
 int is_input_valid(char *input);
 int is_args_valid(int argc, char **argv);
+
+// stack_utils.c
+int is_sorted(t_stack *stack);
+int stack_size(t_stack *stack);
+int has_duplicates(t_stack *stack);
 
 // init_stack.c
 t_stack *init_stack(char **args);

@@ -12,6 +12,7 @@ t_stack *append_node(t_stack *stack, long value)
         return (NULL);
     new_node->value = (int)value;
     new_node->next = NULL;
+    new_node->index = 0;
     if (!stack)
         return (new_node);
     temp = stack;

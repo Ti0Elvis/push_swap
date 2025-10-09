@@ -26,7 +26,8 @@ C_FILES		=	main.c \
 				./src/utils.c \
 				./src/args_validation.c \
 				./src/init_stack.c \
-				./src/free_memory.c
+				./src/free_memory.c \
+				./src/stack_utils.c
 			  
 OBJS		=	$(patsubst %.c,$(OBJS_DIR)/%.o,$(C_FILES))
 
