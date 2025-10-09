@@ -1,23 +1,35 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   stack_utils.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: evera <evera@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/09 16:14:29 by evera             #+#    #+#             */
+/*   Updated: 2025/10/09 16:14:32 by evera            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
-int has_duplicates(t_stack *stack)
+int	has_duplicates(t_stack *stack)
 {
-    t_stack *current;
-    t_stack *runner;
+	t_stack	*current;
+	t_stack	*runner;
 
-    current = stack;
-    while (current != NULL)
-    {
-        runner = current->next;
-        while (runner != NULL)
-        {
-            if (current->value == runner->value)
-                    return (1);
-            runner = runner->next;
-        }
-        current = current->next;
-    }
-    return (0);
+	current = stack;
+	while (current != NULL)
+	{
+		runner = current->next;
+		while (runner != NULL)
+		{
+			if (current->value == runner->value)
+				return (1);
+			runner = runner->next;
+		}
+		current = current->next;
+	}
+	return (0);
 }
 
 int	stack_size(t_stack *stack)
@@ -44,9 +56,9 @@ int	is_sorted(t_stack *stack)
 	return (1);
 }
 
-t_stack *assign_indices(t_stack *stack)
+t_stack	*assign_indices(t_stack *stack)
 {
-	int index;
+	int		index;
 	t_stack	*runner;
 	t_stack	*current;
 

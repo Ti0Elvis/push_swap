@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   radix_sort.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: evera <evera@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/09 16:15:52 by evera             #+#    #+#             */
+/*   Updated: 2025/10/09 16:15:53 by evera            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
-int get_max_bits(int size)
+int	get_max_bits(int size)
 {
 	int	max_bits;
 
@@ -10,7 +22,7 @@ int get_max_bits(int size)
 	return (max_bits);
 }
 
-void process_bit_pass(t_stack **a, t_stack **b, int bit, int size)
+void	process_bit_pass(t_stack **a, t_stack **b, int bit, int size)
 {
 	int	i;
 
@@ -29,7 +41,7 @@ void process_bit_pass(t_stack **a, t_stack **b, int bit, int size)
 		pa(a, b);
 }
 
-void radix_sort(t_stack **a, t_stack **b)
+void	radix_sort(t_stack **a, t_stack **b)
 {
 	int	size;
 	int	max_bits;

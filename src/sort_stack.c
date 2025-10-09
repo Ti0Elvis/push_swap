@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sort_stack.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: evera <evera@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/09 16:16:13 by evera             #+#    #+#             */
+/*   Updated: 2025/10/09 16:16:13 by evera            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
-int get_min_pos(t_stack *stack)
+int	get_min_pos(t_stack *stack)
 {
 	int	i;
 	int	min;
@@ -24,13 +36,13 @@ int get_min_pos(t_stack *stack)
 	return (pos);
 }
 
-void sort_two(t_stack **a)
+void	sort_two(t_stack **a)
 {
 	if ((*a)->value > (*a)->next->value)
 		sa(a);
 }
 
-void sort_three(t_stack **a)
+void	sort_three(t_stack **a)
 {
 	int	x;
 	int	y;
@@ -57,7 +69,7 @@ void sort_three(t_stack **a)
 		rra(a);
 }
 
-void sort_five(t_stack **a, t_stack **b)
+void	sort_five(t_stack **a, t_stack **b)
 {
 	int	size;
 	int	min_pos;
@@ -86,7 +98,7 @@ void sort_five(t_stack **a, t_stack **b)
 		pa(a, b);
 }
 
-void sort_stack(t_stack **a, t_stack **b)
+void	sort_stack(t_stack **a, t_stack **b)
 {
 	int	size;
 
