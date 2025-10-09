@@ -1,21 +1,9 @@
 #include "src/push_swap.h"
 
-// 1. check input - done
-// 2. init stack - done
-
-void print_stack(t_stack *stack)
-{
-    t_stack *current = stack;
-    while (current)
-    {
-        ft_printf("Value: %d, Index: %d\n", current->value, current->index);
-        current = current->next;
-    }
-}
-
 int main(int argc, char **argv)
 {
     t_stack *stack_a;
+    t_stack *stack_b;
 
     if (argc < 2)
         print_error("Missing arguments");
@@ -26,7 +14,9 @@ int main(int argc, char **argv)
         print_error("Failed to initialize stack");
     if (has_duplicates(stack_a))
         return (free_stack(stack_a), print_error("Duplicates found"));
-    print_stack(stack_a);
+    stack_a = assign_indices(stack_a);
+    stack_b = NULL;
+    sort_stack(&stack_a, &stack_b);
     free_stack(stack_a);
     return (0);
 }

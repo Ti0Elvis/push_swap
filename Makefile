@@ -27,8 +27,14 @@ C_FILES		=	main.c \
 				./src/args_validation.c \
 				./src/init_stack.c \
 				./src/free_memory.c \
-				./src/stack_utils.c
-			  
+				./src/push_operations.c \
+				./src/swap_operations.c \
+				./src/rotate_operations.c \
+				./src/reverse_rotate_operations.c \
+				./src/stack_utils.c \
+				./src/radix_sort.c \
+				./src/sort_stack.c
+
 OBJS		=	$(patsubst %.c,$(OBJS_DIR)/%.o,$(C_FILES))
 
 # =============================== TARGETS =================================== #

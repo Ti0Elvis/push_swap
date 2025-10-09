@@ -44,7 +44,7 @@ int	is_sorted(t_stack *stack)
 	return (1);
 }
 
-void assign_indices(t_stack *stack)
+t_stack *assign_indices(t_stack *stack)
 {
 	int index;
 	t_stack	*runner;
@@ -64,4 +64,5 @@ void assign_indices(t_stack *stack)
 		current->index = index;
 		current = current->next;
 	}
+	return (stack);
 }
